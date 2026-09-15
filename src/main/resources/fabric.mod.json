@@ -3,29 +3,22 @@
 	"id": "clientcommands-cracker",
 	"version": "${version}",
 	"name": "clientcommands-cracker",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "disable clientcommands' server enforcements",
 	"authors": [
-		"Me!"
+		"infinitygames"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/igameshat/clientcommands-cracked"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/clientcommands-cracker/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.swaphat.client.ccc.ClientcommandsCracker"
-		]
-	},
+	"environment": "client",
 	"mixins": [
 		"clientcommands-cracker.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.3",
-		"java": ">=25",
-		"fabric-api": "*"
+		"java": ">=25"
 	}
 }
