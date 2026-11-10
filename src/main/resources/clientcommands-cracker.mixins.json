@@ -2,13 +2,20 @@
   "required" : true,
   "package" : "com.swaphat.client.ccc.mixin",
   "compatibilityLevel" : "JAVA_25",
-  "mixins" : [
-    "ClientCommandsServerMixin"
+  "client" : [
+    "ClientcommandsDataQueryHandlerMixin",
+    "CommandExecutionBypassMixin",
+    "FindItemCommandMixin",
+    "RoundTripFenceMixin",
+    "ServerPermissionsMixin"
   ],
   "injectors" : {
     "defaultRequire" : 1
   },
   "overwrites" : {
     "requireAnnotations" : true
-	}
+  },
+  "mixins" : [
+    "ClientCommandHelperMixin"
+  ]
 }
